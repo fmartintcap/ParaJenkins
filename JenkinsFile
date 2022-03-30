@@ -1,0 +1,24 @@
+pipeline {
+    
+    agent any   // Ejecuta esto en cualquier sitio
+    
+    stages {
+        stage('Compilación') {
+            steps {
+                echo 'Soy el programa que compila'
+            }
+        }
+        stage('Pruebas') {
+            steps {
+                echo 'Soy el programa que hace las pruebas'
+                echo 'Y también genero el informe de pruebas'
+            }
+        }
+        stage('Empaquetado') {
+            steps {
+                echo 'Soy el programa que empaqueta'
+            }
+        }
+    }
+    
+}
