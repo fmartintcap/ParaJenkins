@@ -12,7 +12,7 @@ pipeline {
       cron 'H * * * *'
     }
     tools {
-      maven 'Mimaven Muy Guay pa compilar version 3.6'
+      maven 'Maven 3.6'
     }
 
     stages {
